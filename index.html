@@ -1,0 +1,152 @@
+
+<!doctype html><html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="refresh" content="890; URL=/oam/server/logout?end_url=/scs/plte/es_co/HomeLTE"/>
+	<title>Calculadora</title><meta name="description" content="Mide todo lo que puedes hacer"/>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="responsive.css">
+	<script type="text/javascript" src="jQuery.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+
+
+	<link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src="calculadora.js"></script>
+	<script type="text/javascript">
+
+		function initializeRange() {
+			rangeSliders(
+	///// CONVENCION
+	0.02,   // Correos enviados y recibidos con adjuntos
+	4,   // Canciones
+	5,   // Horas de ver paginas web
+	0.1,     // Posts
+	0.03,   // Chats
+	4,    // Aplicaciones descargadas
+	///// VALORES MAXIMOS
+	1000,   // correos
+	100,    // canciones
+	300,   // horas p?ginas web
+	400,  // posts
+	1000,    // chats
+	100,    // apps
+	// UNIDADES
+	'Correos',
+	'Canciones',
+	'Horas',
+	'Posts',
+	'Chats',
+	'Apps'
+	);
+		} 
+		$(document).ready(function(){
+			initializeRange();
+		});
+	</script>
+</head>
+
+
+<section class="content_wrapper_int">	
+	<div class="title_int"><h1>Calculadora</h1></div>	<div class="calculadora"><div class="title"><h2>Con Pipelandia Puedes Pedir Esto</h2></div><ul class="panel_sliders">
+
+	<li class="slide_correos">
+		<span class="slidetype">Correos</span>
+		<div id="correos" class="range_slide"></div> 
+		<span class="currentval"> 0 Correos</span>
+	</li>
+
+	<li class="slide_musica">
+		<span class="slidetype">Canciones</span>
+		<div id="horas-musica" class="range_slide"></div>
+		<span class="currentval"> 0 Canciones</span>
+	</li>
+
+
+	<li class="slide_paginas">
+		<span class="slidetype">Navegación</span>
+		<div id="horas-web" class="range_slide"></div> 
+		<span class="currentval"> 0 Horas</span>
+	</li>
+
+	<li class="slide_posts">
+		<span class="slidetype">Facebook post</span>
+		<div id="posts" class="range_slide"></div> 
+		<span class="currentval"> 0 Posts</span>
+	</li>
+
+	<li class="slide_chat">
+		<span class="slidetype">Chats</span>
+		<div id="horas-chat" class="range_slide"></div> 
+		<span class="currentval"> 0 Chats</span>
+	</li>
+
+	<li class="slide_apps">
+		<span class="slidetype">Descarga de apps</span>
+		<div id="apps" class="range_slide"></div> 
+		<span class="currentval"> 0 Apps</span>
+	</li>
+
+</ul>
+
+<div class="panel_right_CalcDiv">
+
+	<div class="benef_desp_Calculadora" style="display: block;">
+
+		<div class="benef_desp_Calculadora_top">
+			<div class="benef_desp_Calculadora_top_text">Total:</div>
+			<div class="benef_desp_Calculadora_top_num"><span></span></div>
+		</div>
+
+		<span class="benef_desp_Calculadora_arrow_left"></span>
+	</div>
+
+
+	<div class="panel_result">
+		<div class="centrado">
+			<p>Tu consumo aproximado mensual:</p>
+			<div class="swatch_cont">
+				<div id="swatch" style="height: 50%;"></div>
+			</div>
+			<div class="medidor">
+				<span style="bottom: 50%;">55.89 GBs</span>
+			</div>
+		</div>
+	</div> 	
+</div>
+</div><div id="convenciones_calculadora"><p class="subtitulo">CONVENCIONES</p><div class="columna_izquierda">
+<div>10 canciones = 40 MB</div>
+<div>1 hora de navegaci&oacute;n (30 p&aacute;ginas) = 5 MB</div>
+<div>100 Facebook posts (s&oacute;lo texto) = 10 MB</div>
+</div>
+<div class="columna_derecha">
+	<div>100 correos (s&oacute;lo texto) = 2 MB</div>
+	<div>100 Whatsapp chats (s&oacute;lo texto) = 3 MB</div>
+	<div>10 aplicaciones descargadas = 40 MB</div>
+</div>
+<div>
+	&nbsp;</div>
+</div>
+</section>
+<footer>
+	<div class="wrapper">
+		<div class="col_footer">
+			<h3>Servicios</h3>
+
+		</ul>
+	</div>	            
+</div>
+</footer>		
+
+</div>		
+
+
+</body>
+
+</html>
