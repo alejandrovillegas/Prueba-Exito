@@ -74,7 +74,7 @@ function rangeSliders (conv_correo,
         animate: true,
         range: "min",
         slide: function(e,ui) {
-            $(this).siblings('.currentval').html(ui.value+' '+uni_canciones);
+            $(this).siblings('.currentval').html(ui.value+' '+"Minutos");
         },
         change: refreshSwatch
     });
@@ -87,7 +87,7 @@ function rangeSliders (conv_correo,
         animate: true,
         range: "min",
         slide: function(e,ui) {
-            $(this).siblings('.currentval').html(ui.value+' '+uni_horas);
+            $(this).siblings('.currentval').html(ui.value+' '+"Minutos");
         },
         change: refreshSwatch
     });

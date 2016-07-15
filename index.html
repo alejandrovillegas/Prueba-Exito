@@ -24,18 +24,18 @@
 		function initializeRange() {
 			rangeSliders(
 	///// CONVENCION
-	0.02,   // Correos enviados y recibidos con adjuntos
-	4,   // Canciones
-	5,   // Horas de ver paginas web
-	0.1,     // Posts
-	0.03,   // Chats
-	4,    // Aplicaciones descargadas
+	0.8,   // Correos enviados y recibidos con adjuntos
+	0.5,   // Canciones
+	2.048,   // Horas de ver paginas web
+	0.18,     // Posts
+	5.120,   // Chats
+	4.096,    // Aplicaciones descargadas
 	///// VALORES MAXIMOS
-	1000,   // correos
-	100,    // canciones
-	300,   // horas p?ginas web
+	100,   // correos
+	1000,    // canciones
+	1000,   // horas p?ginas web
 	400,  // posts
-	1000,    // chats
+	10,    // chats
 	100,    // apps
 	// UNIDADES
 	'Correos',
@@ -54,41 +54,41 @@
 
 
 <section class="content_wrapper_int">	
-	<div class="title_int"><h1>Calculadora</h1></div>	<div class="calculadora"><div class="title"><h2>Con Pipelandia Puedes Pedir Esto</h2></div><ul class="panel_sliders">
+	<div class="title_int"><h1>Calculadora</h1></div>	<div class="calculadora"><div class="title"><h2 style="color: #9b5ba5;">Con Móvil éxito Puedes Pedir Esto</h2></div><ul class="panel_sliders">
 
 	<li class="slide_correos">
-		<span class="slidetype">Correos</span>
+		<span class="slidetype">Correos (Promedio)</span>
 		<div id="correos" class="range_slide"></div> 
 		<span class="currentval"> 0 Correos</span>
 	</li>
 
 	<li class="slide_musica">
-		<span class="slidetype">Canciones</span>
+		<span class="slidetype">Minutos Streaming Música</span>
 		<div id="horas-musica" class="range_slide"></div>
-		<span class="currentval"> 0 Canciones</span>
+		<span class="currentval"> 0 Minutos</span>
 	</li>
 
 
 	<li class="slide_paginas">
-		<span class="slidetype">Navegación</span>
+		<span class="slidetype">Minutos Streaming Video</span>
 		<div id="horas-web" class="range_slide"></div> 
-		<span class="currentval"> 0 Horas</span>
+		<span class="currentval"> 0 Minutos</span>
 	</li>
 
 	<li class="slide_posts">
-		<span class="slidetype">Facebook post</span>
+		<span class="slidetype">Sitios web</span>
 		<div id="posts" class="range_slide"></div> 
-		<span class="currentval"> 0 Posts</span>
+		<span class="currentval"> 0 Páginas</span>
 	</li>
 
 	<li class="slide_chat">
-		<span class="slidetype">Chats</span>
+		<span class="slidetype">Whatsapp u otros</span>
 		<div id="horas-chat" class="range_slide"></div> 
 		<span class="currentval"> 0 Chats</span>
 	</li>
 
 	<li class="slide_apps">
-		<span class="slidetype">Descarga de apps</span>
+		<span class="slidetype">Descarga app</span>
 		<div id="apps" class="range_slide"></div> 
 		<span class="currentval"> 0 Apps</span>
 	</li>
@@ -120,15 +120,17 @@
 		</div>
 	</div> 	
 </div>
-</div><div id="convenciones_calculadora"><p class="subtitulo">CONVENCIONES</p><div class="columna_izquierda">
-<div>10 canciones = 40 MB</div>
-<div>1 hora de navegaci&oacute;n (30 p&aacute;ginas) = 5 MB</div>
-<div>100 Facebook posts (s&oacute;lo texto) = 10 MB</div>
+</div><div id="convenciones_calculadora"><p style="color: #9b5ba5;">CONVENCIONES</p><div class="columna_izquierda">
+<div>Email (archivo adjunto) = 300Kb</div>
+<div>Email (texto) = 20Kb</div>
+<div>Email (imagen adjunta) = 350 Kb</div>
+<div>Video (minuto streaming) = 2048Kb</div>
 </div>
 <div class="columna_derecha">
-	<div>100 correos (s&oacute;lo texto) = 2 MB</div>
-	<div>100 Whatsapp chats (s&oacute;lo texto) = 3 MB</div>
-	<div>10 aplicaciones descargadas = 40 MB</div>
+	<div>Música (minuto streaming) = 500Kb</div>
+	<div>Sitios web = 180Kb</div>
+	<div>Whatsapp u otros = 5120Kb</div>
+	<div>Descarga Apps = 4096Kb</div>
 </div>
 <div>
 	&nbsp;</div>
